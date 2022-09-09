@@ -14,7 +14,23 @@
 		2000B2BE28333F2800D40462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2000B2BD28333F2800D40462 /* Assets.xcassets */; };
 		2000B2C128333F2800D40462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2000B2BF28333F2800D40462 /* LaunchScreen.storyboard */; };
 		2000B2C428333F2800D40462 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2000B2C328333F2800D40462 /* main.m */; };
+		2062CB2F28484D32009FCC7F /* STPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2062CB2E28484D32009FCC7F /* STPerson.m */; };
+		20970E3B286077B20009A4A3 /* STStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 20970E3A286077B20009A4A3 /* STStudent.m */; };
+		20C7FC1D28C9B96400923B59 /* LockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C7FC1C28C9B96400923B59 /* LockVC.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2000B2CE28333FEF00D40462 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2000B2AE28333F2600D40462 /* TXIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +45,12 @@
 		2000B2C028333F2800D40462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2000B2C228333F2800D40462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2000B2C328333F2800D40462 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2062CB2D28484D32009FCC7F /* STPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STPerson.h; sourceTree = "<group>"; };
+		2062CB2E28484D32009FCC7F /* STPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPerson.m; sourceTree = "<group>"; };
+		20970E39286077B20009A4A3 /* STStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStudent.h; sourceTree = "<group>"; };
+		20970E3A286077B20009A4A3 /* STStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStudent.m; sourceTree = "<group>"; };
+		20C7FC1B28C9B96400923B59 /* LockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockVC.h; sourceTree = "<group>"; };
+		20C7FC1C28C9B96400923B59 /* LockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			children = (
 				2000B2B028333F2600D40462 /* TXIMDemo */,
 				2000B2AF28333F2600D40462 /* Products */,
+				2000B2CA28333FEF00D40462 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +90,12 @@
 				2000B2B528333F2600D40462 /* SceneDelegate.m */,
 				2000B2B728333F2600D40462 /* ViewController.h */,
 				2000B2B828333F2600D40462 /* ViewController.m */,
+				2062CB2D28484D32009FCC7F /* STPerson.h */,
+				2062CB2E28484D32009FCC7F /* STPerson.m */,
+				20970E39286077B20009A4A3 /* STStudent.h */,
+				20970E3A286077B20009A4A3 /* STStudent.m */,
+				20C7FC1B28C9B96400923B59 /* LockVC.h */,
+				20C7FC1C28C9B96400923B59 /* LockVC.m */,
 				2000B2BA28333F2600D40462 /* Main.storyboard */,
 				2000B2BD28333F2800D40462 /* Assets.xcassets */,
 				2000B2BF28333F2800D40462 /* LaunchScreen.storyboard */,
@@ -74,6 +103,13 @@
 				2000B2C328333F2800D40462 /* main.m */,
 			);
 			path = TXIMDemo;
+			sourceTree = "<group>";
+		};
+		2000B2CA28333FEF00D40462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +122,7 @@
 				2000B2AA28333F2600D40462 /* Sources */,
 				2000B2AB28333F2600D40462 /* Frameworks */,
 				2000B2AC28333F2600D40462 /* Resources */,
+				2000B2CE28333FEF00D40462 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +185,9 @@
 			files = (
 				2000B2B928333F2600D40462 /* ViewController.m in Sources */,
 				2000B2B328333F2600D40462 /* AppDelegate.m in Sources */,
+				20C7FC1D28C9B96400923B59 /* LockVC.m in Sources */,
+				20970E3B286077B20009A4A3 /* STStudent.m in Sources */,
+				2062CB2F28484D32009FCC7F /* STPerson.m in Sources */,
 				2000B2C428333F2800D40462 /* main.m in Sources */,
 				2000B2B628333F2600D40462 /* SceneDelegate.m in Sources */,
 			);
@@ -226,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,6 +334,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 368N8MLT2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TXIMDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,10 +347,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onecloud.powerone.TXIMDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -320,6 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 368N8MLT2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TXIMDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,10 +376,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onecloud.powerone.TXIMDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

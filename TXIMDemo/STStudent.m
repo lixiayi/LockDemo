@@ -9,4 +9,9 @@
 
 @implementation STStudent
 
++(void)initialize
+{
+    NSLog(@"STStudent initialize");
+}
+
 @end

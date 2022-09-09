@@ -9,8 +9,23 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface STPerson : NSObject
+/// <#Description#>
+@interface STPerson : NSObject<NSCoding>
+{
 
+//    NSString *_address;
+//    NSString *_isAddress;
+//    NSString *address;
+//    NSString *isAddress;
+}
+
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) int  age;
+
+
+- (void)eat;
++ (void)sleep;
 @end
 
 NS_ASSUME_NONNULL_END

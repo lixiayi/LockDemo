@@ -13,6 +13,7 @@
 #import <NetworkExtension/NetworkExtension.h>
 #import <pthread/pthread.h>
 #import "LockVC.h"
+#import "RWLock.h"
 
 
 #define    STMessageSend(...) ((void * (*)(id, SEL ,id))objc_msgSend)(__VA_ARGS__);
@@ -76,8 +77,10 @@ typedef void(^Block)(void);
 //    [self tb4];
     
     
-    LockVC *lockvc = [LockVC new];
-    [self presentViewController:lockvc animated:YES completion:nil];
+//    LockVC *lockvc = [LockVC new];
+//    [self presentViewController:lockvc animated:YES completion:nil];
+    RWLock *rwlock = [RWLock new];
+    [self presentViewController:rwlock animated:YES completion:nil];
 }
 
 - (NSString *)convertDataToHexStr:(NSData *)data {

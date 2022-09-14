@@ -17,9 +17,16 @@
 @property (nonatomic, assign) os_unfair_lock unfairLock;
 
 
+
+
 @end
 
 @implementation Item
+
+- (void)showDataiItem:(Item *)item
+{
+    
+}
 
 @end
 
@@ -42,14 +49,16 @@
 - (void)saleTicket
 {
 //    pthread_mutex_lock(&_mutex);
-    os_unfair_lock_lock(&_unfairLock);
+//    os_unfair_lock_lock(&_unfairLock);
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
     NSUInteger ticketCo = --self.ticketCount;
     self.ticketCount = ticketCo;
     sleep(1);
     NSLog(@"tickCo--->%ld,thread===>%@",self.ticketCount, [NSThread currentThread]);
 
+    dispatch_semaphore_signal(self.semaphore);
 //    pthread_mutex_unlock(&_mutex);
-    os_unfair_lock_unlock(&_unfairLock);
+//    os_unfair_lock_unlock(&_unfairLock);
 
 }
 
